@@ -16,4 +16,12 @@ COMMANDE (**id**, date_commande)                                  (nouveau)
 LIGNE_COMMANDE (**#id_commande**, **#id_plat**, quantite)         (nouveau)
 => car la quantité dépend à la fois de la commande et du plat
 
+Etape 4 
+CATEGORIE (**id**, nom)
+PLAT (**id**, nom, prix, #id_categorie)
+CLIENT (**id**, nom)                                              (nouveau)
+COMMANDE (**id**, date_commande, #id_client?)                     (modifié)
+LIGNE_COMMANDE (**#id_commande**, **#id_plat**, quantite)
+=> car la plupart des clients sont de passage et on ne leur demande rien.
+
 
