@@ -22,6 +22,6 @@ PLAT (**id**, nom, prix, #id_categorie)
 CLIENT (**id**, nom)                                              (nouveau)
 COMMANDE (**id**, date_commande, #id_client?)                     (modifié)
 LIGNE_COMMANDE (**#id_commande**, **#id_plat**, quantite)
-=> car la plupart des clients sont de passage et on ne leur demande rien.
+=> Non : id_client est facultatif (NULL autorisé) ,car la plupart des clients sont de passage et on ne leur demande rien.alors on peut faire null sur l'id_client 
 
 
